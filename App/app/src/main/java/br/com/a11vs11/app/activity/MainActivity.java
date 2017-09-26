@@ -15,5 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         DBManager.updateDB(this);
+
+        DBManager dbManager = new DBManager(this);
+        dbManager.getAllManagers();
     }
 }

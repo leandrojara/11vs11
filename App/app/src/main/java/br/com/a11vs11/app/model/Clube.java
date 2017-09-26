@@ -10,6 +10,13 @@ public class Clube {
     private String nome;
     private Plataforma plataforma;
 
+    public Clube() {
+    }
+
+    public Clube(String nome) {
+        this.nome = nome;
+    }
+
     public int getId() {
         return id;
     }

@@ -9,6 +9,13 @@ public class Plataforma {
     private int id;
     private String nome;
 
+    public Plataforma() {
+    }
+
+    public Plataforma(String nome) {
+        this.nome = nome;
+    }
+
     public int getId() {
         return id;
     }
