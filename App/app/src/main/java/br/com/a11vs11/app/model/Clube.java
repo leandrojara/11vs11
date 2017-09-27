@@ -11,7 +11,7 @@ public class Clube implements Serializable {
     private int id;
     private String nome;
     private Plataforma plataforma;
-    private int drawableId;
+    private int drawable;
 
     public Clube() {
     }
@@ -44,11 +44,11 @@ public class Clube implements Serializable {
         this.plataforma = plataforma;
     }
 
-    public int getDrawableId() {
-        return drawableId;
+    public int getDrawable() {
+        return drawable;
     }
 
-    public void setDrawableId(int drawableId) {
-        this.drawableId = drawableId;
+    public void setDrawable(int drawable) {
+        this.drawable = drawable;
     }
 }

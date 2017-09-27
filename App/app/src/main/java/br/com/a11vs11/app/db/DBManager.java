@@ -52,6 +52,7 @@ public class DBManager {
                                 "id integer primary key autoincrement," +
                                 "nome text," +
                                 "plataforma integer," +
+                                "drawable integer," +
                                 "foreign key(plataforma) references plataforma(id)" +
                                 ");");
                         db.execSQL("create table manager(" +
@@ -66,29 +67,29 @@ public class DBManager {
 //                        inserting data
                         db.execSQL("insert into plataforma (nome) values " +
                                 "('XBOX'), ('PS4'), ('PC');");
-                        db.execSQL("insert into clube (nome, plataforma) values ('Akolty FC', 1)," +
-                                "('All Blacks Team', 1)," +
-                                "('ALL GAZARRA E-SPORTS', 2)," +
-                                "('American Boys FC', 1)," +
-                                "('Amigos Da Cevada ', 2)," +
-                                "('ARENA FIFA E-SPORTS', 2)," +
-                                "('Arsenalcool FC', 1)," +
-                                "('Atlético D.N', 2)," +
-                                "('Barça FC', 2)," +
-                                "('Barzilai', 3)," +
-                                "('BIRDEAUX FC', 3)," +
-                                "('Bixcoito de Futebol Virtual', 2)," +
-                                "('Black Pumas', 1)," +
-                                "('BOLEIROS E-SPORTS', 2)," +
-                                "('Bonde da C', 2)," +
-                                "('Bravos FC', 3)," +
-                                "('Bravos FC Xone', 1)," +
-                                "('brazilian storm', 2)," +
-                                "('BRAZILIAN STORM E-SPORTS', 2)," +
-                                "('C A Pojeto juniors', 2)," +
-                                "('CANELAS FC', 3)," +
-                                "('Cariocas FR', 2)," +
-                                "('Castelo e-Sports', 2)," +
+                        db.execSQL("insert into clube (nome, plataforma, drawable) values ('Akolty FC', 1, " + R.mipmap.logo_akolty_fc + ")," +
+                                "('All Blacks Team', 1, 0)," +
+                                "('ALL GAZARRA E-SPORTS', 2, " + R.mipmap.logo_all_gazarra_esports + ")," +
+                                "('American Boys FC', 1, " + R.mipmap.logo_american_boys_fc + ")," +
+                                "('Amigos Da Cevada ', 2, " + R.mipmap.logo_amigos_da_cevada + ")," +
+                                "('ARENA FIFA E-SPORTS', 2, 0)," +
+                                "('Arsenalcool FC', 1, " + R.mipmap.logo_arsenalcool_fc + ")," +
+                                "('Atlético D.N', 2, 0)," +
+                                "('Barça FC', 2, 0)," +
+                                "('Barzilai', 3, " + R.mipmap.logo_barzilai + ")," +
+                                "('BIRDEAUX FC', 3, 0)," +
+                                "('Bixcoito de Futebol Virtual', 2, " + R.mipmap.logo_bixcoito + ")," +
+                                "('Black Pumas', 1, " + R.mipmap.logo_black_pumas + ")," +
+                                "('BOLEIROS E-SPORTS', 2, 0)," +
+                                "('Bonde da C', 2, 0)," +
+                                "('Bravos FC', 3, 0)," +
+                                "('Bravos FC Xone', 1, 0)," +
+                                "('brazilian storm', 2, 0)," +
+                                "('BRAZILIAN STORM E-SPORTS', 2, 0)," +
+                                "('C A Pojeto juniors', 2, " + R.mipmap.logo_projeto_juniors + ")," +
+                                "('CANELAS FC', 3, " + R.mipmap.logo_canelas_fc + ")," +
+                                "('Cariocas FR', 2, " + R.mipmap.logo_cariocas + ")," +
+                                "('Castelo e-Sports', 2, " + R.mipmap.logo_castelo_esports + ")," +
                                 "('Caucaia fifeiros', 2)," +
                                 "('Champions Fifa Br E-Sports', 2)," +
                                 "('Coroas', 3)," +
@@ -197,7 +198,7 @@ public class DBManager {
         }
     }
 
-    public List<Manager> getManagers(int plataforma){
+    public List<Manager> getManagers(int plataforma) {
         SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, SQLiteDatabase.CREATE_IF_NECESSARY, null);
         db.setVersion(DB_VERSION);
         db.setLocale(Locale.getDefault());
