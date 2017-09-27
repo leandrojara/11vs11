@@ -1,84 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="br.com.a11vs11.app.activity.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/btnCbfvStore"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/cbfvStore"
-            android:drawableTop="@mipmap/ic_cbfv_store"/>
-        <Button
-            android:id="@+id/btnRegulamentos"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnCbfvStore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_cbfv_store" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/cbfvStore"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/regulamentos"
-            android:drawableTop="@mipmap/ic_regulamentos"/>
-        <Button
-            android:id="@+id/btnFaq"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnRegulamentos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_regulamento" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/regulamentos"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/faq"
-            android:drawableTop="@mipmap/ic_faq"/>
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnFaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_faq" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/faq"
+                android:textAlignment="center" />
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/btnContatosXbox"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_xbox"
-            android:text="@string/contatos"/>
-        <Button
-            android:id="@+id/btnContatosPs4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnContatosXbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_xbox" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/contatos"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_ps4"
-            android:text="@string/contatos"/>
-        <Button
-            android:id="@+id/btnContatosPc"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnContatosPs4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_ps4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/contatos"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_windows"
-            android:text="@string/contatos"/>
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnContatosPc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_windows" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/contatos"
+                android:textAlignment="center" />
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <Button
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/app_name"/>
-        <Button
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_facebook" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/facebook"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/app_name"/>
-        <Button
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_twitter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/twitter"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/app_name"/>
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnYoutube"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:clickable="true"
+                android:src="@mipmap/ic_youtube" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/youtube"
+                android:textAlignment="center" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
