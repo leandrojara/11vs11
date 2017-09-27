@@ -40,7 +40,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_view_contacts.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_view_contacts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -49,6 +62,19 @@
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager_row_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/manager_row_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
@@ -1899,11 +1925,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/model/FAQ.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/model/Plataforma.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_view_contacts.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/model/Clube.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/db/DBManager.java" />
@@ -1914,8 +1938,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/interpolator/down_from_top.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/animator/down_from_top.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/animator/up_from_bottom.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/adapter/ManagerCustomAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/activity/ViewContactsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/adapter/ManagerCustomAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_view_contacts.xml" />
       </list>
     </option>
   </component>
@@ -2096,6 +2122,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2494,10 +2524,10 @@
         <state relative-caret-position="459">
           <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2517,10 +2547,10 @@
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2540,10 +2570,10 @@
         <state relative-caret-position="221">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2563,10 +2593,10 @@
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2586,10 +2616,10 @@
         <state relative-caret-position="221">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2616,10 +2646,10 @@
         <state relative-caret-position="221">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2646,10 +2676,10 @@
         <state relative-caret-position="170">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2745,19 +2775,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_name.png" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="e#260#278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -2770,10 +2787,10 @@
         <state relative-caret-position="204">
           <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
           <folding>
-            <element signature="e#4527#4558#0" expanded="true" />
-            <element signature="e#4900#4937#0" expanded="true" />
-            <element signature="e#5102#5138#0" expanded="true" />
-            <element signature="e#5302#5337#0" expanded="true" />
+            <element signature="e#4527#4558#0" expanded="false" />
+            <element signature="e#4900#4937#0" expanded="false" />
+            <element signature="e#5102#5138#0" expanded="false" />
+            <element signature="e#5302#5337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2859,16 +2876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/adapter/ManagerCustomAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/model/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -2879,36 +2886,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/manager_row_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/activity/ViewContactsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_view_contacts.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="340">
+          <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/a11vs11/app/adapter/ManagerCustomAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="89" column="116" selection-start-line="89" selection-start-column="116" selection-end-line="89" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3353#3700#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
@@ -2919,6 +2927,28 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/manager_row_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_view_contacts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>

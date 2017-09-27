@@ -1,6 +1,8 @@
 package br.com.a11vs11.app.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -46,7 +48,7 @@ public class ManagerCustomAdapter extends ArrayAdapter<Manager> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         // Get the data item for this position
-        Manager manager = getItem(position);
+        final Manager manager = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         ViewHolderManager viewHolder; // view lookup cache stored in tag
 
@@ -80,6 +82,15 @@ public class ManagerCustomAdapter extends ArrayAdapter<Manager> {
         viewHolder.txtNomeClube.setText(manager.getClube() != null ? manager.getClube().getNome() : "");
         viewHolder.txtTelefoneManager.setText(manager.getTelefone());
         viewHolder.txtEmailManager.setText(manager.getEmail());
+
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (manager.getTelefone() != null && !manager.getTelefone().trim().isEmpty()) {
+                    mContext.startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+manager.getTelefone())));
+                }
+            }
+        });
 
         // Return the completed view to render on screen
         return convertView;
