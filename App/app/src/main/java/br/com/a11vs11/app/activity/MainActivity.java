@@ -9,9 +9,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import java.io.Serializable;
+import java.util.List;
 
 import br.com.a11vs11.app.R;
 import br.com.a11vs11.app.db.DBManager;
+import br.com.a11vs11.app.model.Manager;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener {
 
@@ -95,36 +100,47 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     @Override
     public void onClick(View v) {
         if (v.equals(btnCbfvStore)) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://cbfvstore.com.br/"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cbfvStoreLink)));
             startActivity(browserIntent);
-        } else
-        if (v.equals(btnFacebook)) {
-            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/ConfederacaoBrasileiraDeFutebolVirtual/"));;
+        } else if (v.equals(btnFacebook)) {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.facebookLink)));
             try {
                 ApplicationInfo applicationInfo = getPackageManager().getApplicationInfo("com.facebook.katana", 0);
                 if (applicationInfo.enabled) {
-                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://facewebmodal/f?href=https://www.facebook.com/ConfederacaoBrasileiraDeFutebolVirtual/"));
+                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://facewebmodal/f?href=" + getString(R.string.facebookLink)));
                 }
             } catch (Exception e) {
 
             }
             startActivity(i);
-        }  else
-        if (v.equals(btnYoutube)) {
-            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCplQu9cxTABF_-t-B-LGEFQ"));;
-            try {
-                ApplicationInfo applicationInfo = getPackageManager().getApplicationInfo("com.facebook.katana", 0);
-                if (applicationInfo.enabled) {
-                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://facewebmodal/f?href=https://www.youtube.com/channel/UCplQu9cxTABF_-t-B-LGEFQ"));
-                }
-            } catch (Exception e) {
-
-            }
+        } else if (v.equals(btnYoutube)) {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.youtubeLink)));
             startActivity(i);
-        }  else
-        if (v.equals(btnTwitter)) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/cbfvproclubs"));
+        } else if (v.equals(btnTwitter)) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.twitterLink)));
             startActivity(browserIntent);
+        } else if (v.equals(btnContatosXbox) || v.equals(btnContatosPs4) || v.equals(btnContatosPc)) {
+            Intent i = new Intent(this, ViewContactsActivity.class);
+            List<Manager> managers = null;
+            if (v.equals(btnContatosXbox)) {
+                i.putExtra("title", getString(R.string.titleContatosXbox));
+                managers = new DBManager(this).getManagers(1);
+            } else
+            if (v.equals(btnContatosPs4)) {
+                i.putExtra("title", getString(R.string.titleContatosPs4));
+                managers = new DBManager(this).getManagers(2);
+            } else
+            if (v.equals(btnContatosPc)) {
+                i.putExtra("title", getString(R.string.titleContatosPC));
+                managers = new DBManager(this).getManagers(3);
+            }
+
+            if (managers != null && !managers.isEmpty()) {
+                i.putExtra("managers", (Serializable) managers);
+                startActivity(i);
+            } else {
+                Toast.makeText(this, getString(R.string.naoPossuiManagers), Toast.LENGTH_SHORT);
+            }
         }
     }
 }

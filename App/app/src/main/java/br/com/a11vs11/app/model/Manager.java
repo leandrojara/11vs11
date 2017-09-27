@@ -2,11 +2,13 @@ package br.com.a11vs11.app.model;
 
 import android.database.Cursor;
 
+import java.io.Serializable;
+
 /**
  * Created by TDR on 25/09/2017.
  */
 
-public class Manager {
+public class Manager implements Serializable {
 
     private int id;
     private String nome;

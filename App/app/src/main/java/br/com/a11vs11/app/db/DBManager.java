@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+import br.com.a11vs11.app.R;
 import br.com.a11vs11.app.model.Manager;
 
 /**
@@ -196,7 +197,7 @@ public class DBManager {
         }
     }
 
-    public List<Manager> getAllManagers(){
+    public List<Manager> getManagers(int plataforma){
         SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, SQLiteDatabase.CREATE_IF_NECESSARY, null);
         db.setVersion(DB_VERSION);
         db.setLocale(Locale.getDefault());
@@ -206,14 +207,21 @@ public class DBManager {
         sql.append(" from manager m");
         sql.append(" join clube c on c.id = m.clube");
         sql.append(" join plataforma p on p.id = c.plataforma");
-        sql.append(" order by p.nome, m.nome, c.nome");
+        sql.append(" where p.id = ");
+        sql.append(plataforma);
+        sql.append(" order by m.nome, c.nome");
 
         Cursor cursor = db.rawQuery(sql.toString(), null);
         cursor.moveToFirst();
 
         List<Manager> managers = new ArrayList<>();
         while (!cursor.isAfterLast()) {
-            managers.add(new Manager(cursor));
+            Manager manager = new Manager(cursor);
+            if (manager.getClube() != null) {
+                manager.getClube().setDrawableId(1);
+            }
+
+            managers.add(manager);
             cursor.moveToNext();
         }
 

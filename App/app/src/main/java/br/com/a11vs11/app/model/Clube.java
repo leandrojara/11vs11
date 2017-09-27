@@ -1,14 +1,17 @@
 package br.com.a11vs11.app.model;
 
+import java.io.Serializable;
+
 /**
  * Created by TDR on 25/09/2017.
  */
 
-public class Clube {
+public class Clube implements Serializable {
 
     private int id;
     private String nome;
     private Plataforma plataforma;
+    private int drawableId;
 
     public Clube() {
     }
@@ -39,5 +42,13 @@ public class Clube {
 
     public void setPlataforma(Plataforma plataforma) {
         this.plataforma = plataforma;
+    }
+
+    public int getDrawableId() {
+        return drawableId;
+    }
+
+    public void setDrawableId(int drawableId) {
+        this.drawableId = drawableId;
     }
 }

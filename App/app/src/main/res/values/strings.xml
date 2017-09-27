@@ -1,4 +1,5 @@
 <resources>
+    <!--labels-->
     <string name="app_name">11vs11</string>
     <string name="cbfvStore">CBFV Store</string>
     <string name="regulamentos">Regulamentos</string>
@@ -8,4 +9,16 @@
     <string name="facebook">Facebook</string>
     <string name="youtube">YouTube</string>
     <string name="twitter">Twitter</string>
+    <string name="titleContatosXbox">Contatos do XBOX</string>
+    <string name="titleContatosPs4">Contatos do PS4</string>
+    <string name="titleContatosPC">Contatos do PC</string>
+
+    <!--links-->
+    <string name="facebookLink">https://www.facebook.com/ConfederacaoBrasileiraDeFutebolVirtual/</string>
+    <string name="twitterLink">https://twitter.com/cbfvproclubs</string>
+    <string name="youtubeLink">https://www.youtube.com/channel/UCplQu9cxTABF_-t-B-LGEFQ</string>
+    <string name="cbfvStoreLink">http://cbfvstore.com.br/</string>
+
+    <!--messages-->
+    <string name="naoPossuiManagers">Não possui managers cadastrados!</string>
 </resources>
