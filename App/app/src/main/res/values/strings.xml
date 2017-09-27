@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">11vs11</string>
+    <string name="cbfvStore">CBFV Store</string>
+    <string name="regulamentos">Regulamentos</string>
+    <string name="faq">FAQ</string>
+    <string name="contatos">Contatos</string>
 </resources>
