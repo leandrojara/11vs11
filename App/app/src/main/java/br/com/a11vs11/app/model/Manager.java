@@ -36,18 +36,24 @@ public class Manager implements Serializable {
                     break;
                 case "nomeClube":
                     if (this.getClube() == null) {
-                        setClube(new Clube(cursor.getString(i)));
+                        setClube(new Clube());
                     }
+                    getClube().setNome(cursor.getString(i));
+                    break;
+                case "drawableClube":
+                    if (this.getClube() == null) {
+                        setClube(new Clube());
+                    }
+                    getClube().setDrawable(cursor.getInt(i));
                     break;
                 case "nomePlataforma":
                     if (this.getClube() == null) {
                         setClube(new Clube());
                     }
                     if (this.getClube().getPlataforma() == null) {
-                        this.getClube().setPlataforma(new Plataforma(cursor.getString(i)));
-                    } else {
-                        this.getClube().getPlataforma().setNome(cursor.getString(i));
+                        this.getClube().setPlataforma(new Plataforma());
                     }
+                    this.getClube().getPlataforma().setNome(cursor.getString(i));
                     break;
             }
         }

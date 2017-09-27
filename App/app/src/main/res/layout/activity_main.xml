@@ -141,7 +141,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.9"
                 android:clickable="true"
-                android:src="@mipmap/ic_windows" />
+                android:src="@mipmap/ic_origin" />
 
             <TextView
                 android:layout_width="match_parent"

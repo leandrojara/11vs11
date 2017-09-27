@@ -90,44 +90,44 @@ public class DBManager {
                                 "('CANELAS FC', 3, " + R.mipmap.logo_canelas_fc + ")," +
                                 "('Cariocas FR', 2, " + R.mipmap.logo_cariocas + ")," +
                                 "('Castelo e-Sports', 2, " + R.mipmap.logo_castelo_esports + ")," +
-                                "('Caucaia fifeiros', 2)," +
-                                "('Champions Fifa Br E-Sports', 2)," +
-                                "('Coroas', 3)," +
-                                "('Cruzoeiro E-Sports', 2)," +
-                                "('Dangers CR', 2)," +
-                                "('Diabos Vermelhos', 2)," +
-                                "('Diavolo e-Sports', 1)," +
-                                "('Dibrentus', 1)," +
-                                "('Ditadores Es', 2)," +
-                                "('DKG UNITED ', 2)," +
-                                "('Dragões da Real E-Sports', 2)," +
-                                "('EC Canarinho', 2)," +
-                                "('EC GALATICOS', 2)," +
-                                "('EC Invictus ', 1)," +
-                                "('EC Marseille', 1)," +
-                                "('EC Newcastle', 1)," +
-                                "('Exilados FC', 1)," +
-                                "('FAMÍLIA FC', 3)," +
-                                "('FBA E-SPORTS', 2)," +
-                                "('Fc Gênesis ', 3)," +
-                                "('FEA FV', 2)," +
-                                "('Fenômenos P.C.L', 2)," +
-                                "('FIFA CAMPINA', 2)," +
-                                "('Fifanaticos EC', 2)," +
-                                "('Fly and Take', 3)," +
-                                "('FranGames E-Sports', 2)," +
-                                "('Fuleragi FC', 2)," +
-                                "('Full House FC', 2)," +
-                                "('Furacão E-SPORTS', 2)," +
-                                "('Galáticos Football Players', 1)," +
-                                "('Game Over F.V', 2)," +
-                                "('Giants FC', 3)," +
-                                "('GOLD BRASIL', 3)," +
-                                "('Gomez United', 2)," +
-                                "('Grêmio E-Sports', 2)," +
-                                "('Gunners FC', 2)," +
-                                "('Hardline E-Sports', 2)," +
-                                "('Honved E-sports', 2);");
+                                "('Caucaia fifeiros', 2, 0)," +
+                                "('Champions Fifa Br E-Sports', 2, 0)," +
+                                "('Coroas', 3, " + R.mipmap.logo_coroas + ")," +
+                                "('Cruzoeiro E-Sports', 2, " + R.mipmap.logo_cruzoeiro + ")," +
+                                "('Dangers CR', 2, 0)," +
+                                "('Diabos Vermelhos', 2, 0)," +
+                                "('Diavolo e-Sports', 1, 0)," +
+                                "('Dibrentus', 1, 0)," +
+                                "('Ditadores Es', 2, 0)," +
+                                "('DKG UNITED ', 2, 0)," +
+                                "('Dragões da Real E-Sports', 2, " + R.mipmap.logo_dragoes_da_real + ")," +
+                                "('EC Canarinho', 2, 0)," +
+                                "('EC GALATICOS', 2, 0)," +
+                                "('EC Invictus ', 1, 0)," +
+                                "('EC Marseille', 1, " + R.mipmap.logo_marseille + ")," +
+                                "('EC Newcastle', 1, 0)," +
+                                "('Exilados FC', 1, " + R.mipmap.logo_exilados + ")," +
+                                "('FAMÍLIA FC', 3, 0)," +
+                                "('FBA E-SPORTS', 2, " + R.mipmap.logo_fba_esports + ")," +
+                                "('Fc Gênesis ', 3, 0)," +
+                                "('FEA FV', 2, 0)," +
+                                "('Fenômenos P.C.L', 2, " + R.mipmap.logo_fenomenos_pcl + ")," +
+                                "('FIFA CAMPINA', 2, " + R.mipmap.logo_fifa_campina + ")," +
+                                "('Fifanaticos EC', 2, 0)," +
+                                "('Fly and Take', 3, " + R.mipmap.logo_fly_and_take + ")," +
+                                "('FranGames E-Sports', 2, " + R.mipmap.logo_frangames + ")," +
+                                "('Fuleragi FC', 2, 0)," +
+                                "('Full House FC', 2, 0)," +
+                                "('Furacão E-SPORTS', 2, 0)," +
+                                "('Galáticos Football Players', 1, 0)," +
+                                "('Game Over F.V', 2, " + R.mipmap.logo_game_over + ")," +
+                                "('Giants FC', 3, 0)," +
+                                "('GOLD BRASIL', 3, " + R.mipmap.logo_gold + ")," +
+                                "('Gomez United', 2, " + R.mipmap.logo_gomez + ")," +
+                                "('Grêmio E-Sports', 2, " + R.mipmap.logo_gremio + ")," +
+                                "('Gunners FC', 2, 0)," +
+                                "('Hardline E-Sports', 2, " + R.mipmap.logo_hardline + ")," +
+                                "('Honved E-sports', 2, " + R.mipmap.logo_honved + ");");
                         db.execSQL("insert into manager (nome, telefone, email, clube) values ('Marcus Vinicius ','13 991921333','Akoltyfc@gmail.com', (select c.id from clube c where c.nome = 'Akolty FC'))," +
                                 "('Carlos Henrique da Silva do Nascimento','11984526070','carlos_hsn@hotmail.com', (select c.id from clube c where c.nome = 'All Blacks Team'))," +
                                 "('Ademar Peixoto','11970354448','ademar_peixoto@live.com', (select c.id from clube c where c.nome = 'ALL GAZARRA E-SPORTS'))," +
@@ -204,7 +204,7 @@ public class DBManager {
         db.setLocale(Locale.getDefault());
 
         StringBuilder sql = new StringBuilder("select");
-        sql.append(" m.id, m.nome, m.telefone, m.email, c.nome as nomeClube, p.nome as nomePlataforma");
+        sql.append(" m.id, m.nome, m.telefone, m.email, c.nome as nomeClube, c.drawable as drawableClube, p.nome as nomePlataforma");
         sql.append(" from manager m");
         sql.append(" join clube c on c.id = m.clube");
         sql.append(" join plataforma p on p.id = c.plataforma");
@@ -218,10 +218,6 @@ public class DBManager {
         List<Manager> managers = new ArrayList<>();
         while (!cursor.isAfterLast()) {
             Manager manager = new Manager(cursor);
-            if (manager.getClube() != null) {
-                manager.getClube().setDrawableId(1);
-            }
-
             managers.add(manager);
             cursor.moveToNext();
         }
