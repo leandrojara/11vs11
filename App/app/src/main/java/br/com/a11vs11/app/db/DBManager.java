@@ -9,10 +9,11 @@ import java.util.List;
 import java.util.Locale;
 
 import br.com.a11vs11.app.R;
+import br.com.a11vs11.app.model.FAQ;
 import br.com.a11vs11.app.model.Manager;
 
 /**
- * Created by TDR on 25/09/2017.
+ * Created by Leandro Jara on 25/09/2017.
  */
 
 public class DBManager {
@@ -190,6 +191,24 @@ public class DBManager {
                                 "('Jefferson Da Costa Santos ','(21) 98824-0513','Jefferson_JG@yahoo.com', (select c.id from clube c where c.nome = 'Gunners FC'))," +
                                 "('Everton Igor','(11) 99871-3249','evigorferreira@gmail.com', (select c.id from clube c where c.nome = 'Hardline E-Sports'))," +
                                 "('Arthur Neves De Carvalho','(11) 94020-6944','arthur.nevesc@gmail.com', (select c.id from clube c where c.nome = 'Honved E-sports'));");
+                        db.execSQL("insert into faq (pergunta, resposta) values " +
+                                "('Como me cadastro na CBFV ?','Faz login no www.11vs11.com.br e cria sua conta.')," +
+                                "('Como colocar a foto de meu jogador no site ?','O jogador deve fazer login em sua conta e selecionar a opção de inserir foto, a imagem deve estar em 150x150 pixels e estar em jpg .')," +
+                                "('Como crio um time ?','Faço login em minha conta e vou na opção criar time .')," +
+                                "('Como inserir o escudo de meu time ?','O MANAGER deve fazer login e selecionar pra inserir escudo da equipe .\n" +
+                                "A imagem tem que estar em jpg e na resolução 150x150')," +
+                                "('Como me transfiro para um time ou como contrato jogadores ?','Faz login/ No menu transferências solicita o clube que deseja se transferir e aguarda a aprovação do MANAGER.\n" +
+                                "Ou recebe a proposta do MANAGER que deve ir em Transferências / Procurar jogadores em seu quadro de avisos em seu login e mandar a proposta')," +
+                                "('Consigo mudar meu id no site, depois de cadastrado?','Pode procurar um ADM e justificar o motivo da mudança de nome para aprovação da administração, não poderá haver mudanças com campeonato em andamento.')," +
+                                "('Como participo dos campeonatos CBFV ?','Faz cadastro em nosso site e acompanha nossos informativos sobre competições .\n" +
+                                "Para inscrever deve fazer login e procurar campeonatos abertos.')," +
+                                "('Qual o número mínimo de jogadores que meu time tem que ter para jogar os campeonatos CBFV?','Todas as plataformas devem ter um mínimo de 11 jogadores inscritos .\n" +
+                                "Algumas competições tem requisitos diferentes mínimos , pode consultar o regulamento.')," +
+                                "('Qual a tolerância pra pedir W.O? ','10 minutos de tolerância .')," +
+                                "('Como Reporta uma partida oficial?','O MANAGER deve fazer login e selecionar a opção reportar jogos, tem que respeitar o prazo de 24 horas e as 3 imagens são obrigatórias .')," +
+                                "('Como funciona o ranking CBFV ?','É um rankeamento baseado no ranking mundial de seleções da fifa mas alguns elementos de álgebra , todo clube ao se cadastrar na CBFV começa com 100 pontos no ranking, o desempenho do time vai fazer com que adquira pontos, times piores colocados no ranking ganham mais pontos contra times melhores colocados e times com melhor posição no ranking ganham menos pontos contra times inferiores no ranking.')," +
+                                "('As estatísticas do pro no CBFB do antigo site Vão se manter no novo ou vai zerar tudo ?','As estatísticas serão migradas e divididas por 10, para reajuste do coeficiente a casa das centenas .')," +
+                                "('Como é a escolha de jogadores para a seleção brasileira?','Apenas jogadores que atuam pela CBFV podem fazer parte da seleção CSVP, os jogadores são convocados conforme desempenho e destaque nas competições , mas as escolhas são apenas do técnico da seleção . A direção CBFV não interfere na convocação . Apenas temos seleção no momento na plataforma ps4!');");
                     } catch (Exception e) {
                         System.out.println();
                     }
@@ -224,5 +243,24 @@ public class DBManager {
 
         cursor.close();
         return managers;
+    }
+
+    public List<FAQ> getFaqs(){
+        SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, SQLiteDatabase.CREATE_IF_NECESSARY, null);
+        db.setVersion(DB_VERSION);
+        db.setLocale(Locale.getDefault());
+
+        StringBuilder sql = new StringBuilder("select * from faq order by id");
+        Cursor cursor = db.rawQuery(sql.toString(), null);
+        cursor.moveToFirst();
+        List<FAQ> faqs = new ArrayList<>();
+        while (!cursor.isAfterLast()) {
+            FAQ faq = new FAQ(cursor);
+            faqs.add(faq);
+            cursor.moveToNext();
+        }
+
+        cursor.close();
+        return faqs;
     }
 }

@@ -16,6 +16,7 @@ import java.util.List;
 
 import br.com.a11vs11.app.R;
 import br.com.a11vs11.app.db.DBManager;
+import br.com.a11vs11.app.model.FAQ;
 import br.com.a11vs11.app.model.Manager;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     private ImageView btnContatosXbox;
     private ImageView btnContatosPs4;
     private ImageView btnContatosPc;
+    private ImageView btn11vs11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         setContentView(R.layout.activity_main);
         setTitle(getString(R.string.bemVindo));
         DBManager.updateDB(this);
+
+        btn11vs11 = (ImageView) findViewById(R.id.btn11vs11);
+        btn11vs11.setOnClickListener(this);
+        btn11vs11.setOnTouchListener(this);
 
         btnCbfvStore = (ImageView) findViewById(R.id.btnCbfvStore);
         btnCbfvStore.setOnClickListener(this);
@@ -80,7 +86,11 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             case MotionEvent.ACTION_DOWN: {
                 ImageView view = (ImageView) v;
                 //overlay is black with transparency of 0x77 (119)
-                view.getDrawable().setColorFilter(0x77000000, PorterDuff.Mode.SRC_ATOP);
+                if (view.getDrawable() != null) {
+                    view.getDrawable().setColorFilter(0x77000000, PorterDuff.Mode.SRC_ATOP);
+                } else {
+                    view.getBackground().setColorFilter(0x77000000, PorterDuff.Mode.SRC_ATOP);
+                }
                 view.invalidate();
                 break;
             }
@@ -88,7 +98,11 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             case MotionEvent.ACTION_CANCEL: {
                 ImageView view = (ImageView) v;
                 //clear the overlay
-                view.getDrawable().clearColorFilter();
+                if (view.getDrawable() != null) {
+                    view.getDrawable().clearColorFilter();
+                } else {
+                    view.getBackground().clearColorFilter();
+                }
                 view.invalidate();
                 break;
             }
@@ -99,9 +113,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     @Override
     public void onClick(View v) {
-        if (v.equals(btnCbfvStore)) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cbfvStoreLink)));
-            startActivity(browserIntent);
+        if (v.equals(btn11vs11)) {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link11vs11)));
+            startActivity(i);
+        } else if (v.equals(btnCbfvStore)) {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cbfvStoreLink)));
+            startActivity(i);
         } else if (v.equals(btnFacebook)) {
             Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.facebookLink)));
             try {
@@ -117,20 +134,18 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.youtubeLink)));
             startActivity(i);
         } else if (v.equals(btnTwitter)) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.twitterLink)));
-            startActivity(browserIntent);
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.twitterLink)));
+            startActivity(i);
         } else if (v.equals(btnContatosXbox) || v.equals(btnContatosPs4) || v.equals(btnContatosPc)) {
-            Intent i = new Intent(this, ViewContactsActivity.class);
+            Intent i = new Intent(this, ViewManagersActivity.class);
             List<Manager> managers = null;
             if (v.equals(btnContatosXbox)) {
                 i.putExtra("title", getString(R.string.titleContatosXbox));
                 managers = new DBManager(this).getManagers(1);
-            } else
-            if (v.equals(btnContatosPs4)) {
+            } else if (v.equals(btnContatosPs4)) {
                 i.putExtra("title", getString(R.string.titleContatosPs4));
                 managers = new DBManager(this).getManagers(2);
-            } else
-            if (v.equals(btnContatosPc)) {
+            } else if (v.equals(btnContatosPc)) {
                 i.putExtra("title", getString(R.string.titleContatosPC));
                 managers = new DBManager(this).getManagers(3);
             }
@@ -141,6 +156,18 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             } else {
                 Toast.makeText(this, getString(R.string.naoPossuiManagers), Toast.LENGTH_SHORT);
             }
+        } else if (v.equals(btnFaq)) {
+            List<FAQ> faqs = new DBManager(this).getFaqs();
+            if (faqs != null && !faqs.isEmpty()) {
+                Intent i = new Intent(this, ViewFaqActivity.class);
+                i.putExtra("faqs", (Serializable) faqs);
+                startActivity(i);
+            } else {
+                Toast.makeText(this, getString(R.string.naoPossuiFaq), Toast.LENGTH_SHORT);
+            }
+        } else if (v.equals(btnRegulamentos)) {
+            Intent i = new Intent(this, RegulamentoActivity.class);
+            startActivity(i);
         }
     }
 }

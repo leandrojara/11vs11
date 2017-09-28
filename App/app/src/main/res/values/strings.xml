@@ -12,13 +12,275 @@
     <string name="titleContatosXbox">Contatos do XBOX</string>
     <string name="titleContatosPs4">Contatos do PS4</string>
     <string name="titleContatosPC">Contatos do PC</string>
+    <string name="titleFaq">Perguntas Frequentes</string>
 
     <!--links-->
     <string name="facebookLink">https://www.facebook.com/ConfederacaoBrasileiraDeFutebolVirtual/</string>
     <string name="twitterLink">https://twitter.com/cbfvproclubs</string>
     <string name="youtubeLink">https://www.youtube.com/channel/UCplQu9cxTABF_-t-B-LGEFQ</string>
     <string name="cbfvStoreLink">http://cbfvstore.com.br/</string>
+    <string name="link11vs11">http://11vs11.com.br/</string>
 
     <!--messages-->
     <string name="naoPossuiManagers">Não possui managers cadastrados!</string>
+    <string name="naoPossuiFaq">Não existem FAQs informadas!</string>
+
+    <!--accessibility-->
+    <string name="contentDescription11vs11">Link de acesso ao site do 11 versus 11</string>
+    <string name="contentDescriptionCbfvStore">Link de acesso ao site da CBFV Store</string>
+    <string name="contentDescriptionFacebook">Link de acesso ao Facebook</string>
+    <string name="contentDescriptionTwitter">Link de acesso ao Twitter</string>
+    <string name="contentDescriptionYoutube">Link de acesso ao YouTube</string>
+
+    <string name="regulamentoCompleto">
+REGULAMENTO CBFV\n
+\n
+Disposições gerais\n
+Este regulamento estará vigente desde o momento de sua publicação a página web da CBFV. Os jogadores, managers e equipes tem a obrigação de conhecer as normas, o desconhecimento das normas não abona o cumprimento das regras. A organização se reserva o direito de modificar qualquer norma se considerar necessário, mas qualquer modificação será noticiada em nossa página e mídias sociais.\n
+Todas as Equipes devem curtir a página principal da Confederação Brasileira de FUTEBOL VIRTUAL (CBFV) para receber todas as informações necessárias sobre nossas competiçõeshttps://www.facebook.com/CONFEDERAÇÃOBRASILEIRADEFUTEBOLVIRTUAL\n
+1. Jogadores, Managers e Equipes\n
+\n
+1.1  Jogador\n
+Requisitos para um jogador estar apto a disputar a CBFV:\n
+Não possuir nenhum tipo de banimento na CBFV.\n
+Registrar seu usuário corretamente no site, ficar muito atento a escrita de forma correta. Alterações de Psn/Gamertag/Origin só poderão acontecer quando não estiver ocorrendo competições.\n
+Importante o jogador ter ciência dos horários dos jogos da CBFV, para que ingresse de maneira eficaz em seu clube.\n
+Não possuir nenhuma Psn Id/ Gamertag/ Origin que transmita mensagem homofóbica, pornográfica, xenofóbica, racista ou qualquer caso similar. Prezamos pelos bons costumes e respeito a todos os jogadores e equipes. Assim como a imagem da CBFV jamais irá tolerar vínculo a esse tipo de situação.\n
+\n
+1.2 Managers\n
+O manager da CBFV tem que cumprir alguns requisitos:\n
+Não ter nenhum tipo de banimento na organização.\n
+Não estar inscrito em nenhuma outra equipe.\n
+Ter a capacidade de entender o regulamento e poder comunicar-se com as demais equipes.\n
+Ser maior de 18 anos\n
+Atender a todos os requisitos de jogador.\n
+\n
+1.3 Equipes\n
+1.3.1 Requisitos gerais\n
+1.3.1.1. O nome e logotipo do clube não pode ser ofensivo e nem ser parecido com qualquer outro clube já inscrito na CBFV.\n
+1.3.1.2. Toda equipe que não seja filiada e deseja ingressar na CBFV deverá o manager realizar cadastro no site e criar uma equipe, que deverá ser aprovada pela administração.\n
+1.3.1.3. Importante que no momento da inscrição todos os dados sejam preenchidos de forma correta pelo criador do time.\n
+1.3.1.4. Mudança de nome e logo do time não poderão ocorrer com campeonatos em andamento. Será permitido mudanças apenas  1 vez a cada 6 meses, e o elenco tem que permanecer no mínimo 60% em caso de mudança de nome.\n
+Qualquer descumprimento aos pontos mencionados habilitará a CBFV a editar o conteúdo a qualquer momento ou aplicar sanções.\n
+\n
+1.3.1.5. Uma equipe será considerada apta quando cumprir o seguinte requisito de jogadores inscritos:\n
+*Primeira Divisão:  Número mínimo 15.\n
+*Segunda Divisão:  Número mínimo 12.\n
+*Divisões inferiores: Número mínimo 10.\n
+No caso de regional, Super Copa e copa do brasil, o mínimo será 11.\n
+O manager contará como jogador se assim desejar, caso o manager queira apenas gerir o clube ele pode, mas não poderá jogar nenhuma partida.\n
+      *Condição aplicada ao Campeonato Brasileiro.\n
+\n
+1.3.1.6. Apenas equipes brasileiras podem participar das competições da CBFV.\n
+1.3.1.7. Cada equipe poderá ter 3 managers, sendo 1 o fundador.\n
+1.3.1.8. O limite de estrangeiros por equipe será de 3 jogadores.\n
+1.3.1.9. O mandante dos jogos precisa estar em território brasileiro, para que o jogo ocorra em servidor local.\n
+1.3.2 Participação na CBFV\n
+Quando as equipes cumprem os requisitos do tópico anterior se tornam aptas a participar das competições CBFV.\n
+Um manager deve criar o clube em seu perfil de jogador. O manager deverá aceitar as solicitações de transferências dos jogadores respeitando o tópico 1.3.1.\n
+Para iniciar a participação nas competições CBFV o manager deverá inscrever as equipes em nosso site, assim que habilitar as opções de inscrição de nossas competições. As aprovações devem atender os requisitos mínimos e serão confirmadas pela administração.\n
+As Equipes se comprometem a jogar todos os jogos oficiais a que lhes são destinados, não poderão deixar de comparecer a seus jogos mais de 3 vezes, e em hipótese alguma poderão faltar as últimas partidas de qualquer competição CBFV. Se este caso ocorrer a equipe será sancionada conforme item 3.4.5.\n
+No caso de copa se as equipes que não participarem de duas partidas, será eliminada automaticamente da competição e a equipe será punida conforme item 3.4.5.\n
+Se após o fechamento da janela de transferências uma equipe não tem o suficiente de jogadores inscritos no plantel, será descartado da competição. Os requisitos mínimos de jogadores se encontram no item 1.3.1.7. e os períodos de transferência para cada competição encontram-se nesse regulamento.\n
+As equipes têm a obrigação de estar disponíveis para jogar nossos campeonatos no calendário oficial, às segundas, terças e quintas, dentro do horário de 22:00 à 00:00. Para casos excepcionais de problemas com realização de jogos será remarcado o confronto para um dia que ambas equipes estejam disponíveis, em caso contrário a partida será realizada domingo posterior a rodada.\n
+1.3.3. Direitos e Deveres\n
+1.3.3.1 Jogador: Direitos e Deveres\n
+O não cumprimento de algum desses itens pode acarretar em rompimento administrativo do mesmo.\n
+Se firma a legibilidade desses itens no momento em que o jogador enviar ao clube uma solicitação de transferência ou quando o manager enviar solicitação de transferência ao jogador, uma vez aceite a solicitação pelo manager ou jogador, os direitos e Deveres estarão em vigor.\n
+O jogador não poderá abandonar a equipe unilateralmente até o fim da competição, exceto na janela de transferências que antecede a competição e após o fim da competição.\n
+Se entende que quando a temporada termine e o manager não expulsa o jogador e o jogador não abandona o time, o jogador renova automaticamente seu vínculo.\n
+Se um jogador é expulso da equipe em qualquer momento da temporada se torna um jogador livre.\n
+Aceitar a proposta do clube significa aceitar o regulamento da CBFV, o não conhecimento do mesmo não exime sua aplicação.\n
+É terminantemente proibido ameaças a qualquer tipo de pessoa e instituição assim como insultos por partes dos participantes e equipes. O comitê de disciplina da CBFV determinará a punição ao infrator, podendo chegar a expulsão ou medidas correspondentes.\n
+Durante o período de transferências que antecede as competições o jogador poderá sair do clube de maneira unilateral, desde que a saída não ocorra 48 horas antes do fechamento da janela.\n
+Se um jogador é expulso do time nas últimas 48 horas da janela de transferências, o mesmo terá até 72 horas para achar uma equipe, a administração deverá ser notificada sobre o caso.\n
+1.3.3.2 Manager: Direitos e deveres\n
+O não cumprimento de algum dos pontos desse contrato, a depender da gravidade, pode levar a desligamento administrativo da função.\n
+Firmando o compromisso de manager, automaticamente se firma o de jogador, possui os mesmos direitos e obrigações dos jogadores conforme item 1.3.3.1.\n
+Um manager não poderá sair da equipe durante a temporada, apenas quando concluir, no mínimo. Exceto quando consentido pelos outros managers.\n
+Se o manager rompe esse vínculo unilateralmente o mesmo será sancionado pelo Comitê de Disciplina CBFV.\n
+O manager será o responsável pela voz da equipe e sobre qualquer comunicado público sobre a equipe.\n
+Gerir a equipe fazendo com que cumpra o regulamento e sendo responsável pela infração do regulamento seja de forma coletiva ou individual.\n
+Deixar o elenco atualizado de sua equipe.\n
+Buscar não manter em sua equipe jogadores banidos.\n
+O manager tem até a 24 horas após o horário da partida para realização do report, caso não o realize devido a algum problema técnico do site deverá notificar a administração, a reincidência resultará em sanção.\n
+Contatar outras equipes para resolver ou acordar sobre qualquer tipo de situação.\n
+Abrir denúncias ou defender acusações registradas por outras equipes.\n
+O manager tem a opção de atuar apenas como manager, porém não poderá atuar em nenhum jogo pela temporada.\n
+No caso dos jogos narrados, é responsabilidade do manager assegurar que um dos jogadores participem da partida e façam a retransmissão conforme orientação da CBFV.\n
+No caso em que a equipe possua 3 managers, o manager majoritário será aquele que é o fundador da equipe e terá autoridade sob os demais.\n
+Se o manager fundador sai da equipe, o mesmo deverá eleger o manager majoritário.\n
+Os managers são responsáveis que sua equipe respeite todas as normas da CBFV.\n
+Os co-managers podem sair da equipe a qualquer momento da temporada, mas só podem se transferir respeitando as janelas de transferência.\n
+É dever dos managers buscar a gravação de todos os jogos de sua equipe, os vídeos serão essências para qualquer prova de acusação ou de defesa na qual seu time esteja envolvido, preferencialmente uso de transmissões ao vivo.\n
+\n
+2. Mercado de Transferências\n
+O mercado de transferências é o período da competição a qual é habilitado para que os jogadores se transfiram para equipes, assim como as equipes encontrem jogadores.\n
+2.1 Períodos habilitados para Transferência\n
+Durante um período da temporada haverá 7 dias para realizar as transferências no decorrer da competição.\n
+Primeira e Segunda divisão poderão realizar apenas 4 transferências durante a abertura da janela.\n
+Divisões inferiores número de transferências ilimitadas, sem importar a divisão.\n
+Quando encerrar as competições e antes de seu início o número de transferências é ilimitado para cada equipe.\n
+Para as outras competições que não envolvem divisões, o período será de 7 dias, podendo apenas 4 transferências sob qualquer situação.\n
+\n
+2.2 Requisitos para jogador livre:\n
+Cumprir os requisitos para ser jogador CBFV;\n
+Não ter nenhum tipo de punição na organização;\n
+Não ter vínculo com nenhuma equipe.\n
+\n
+2.2.1 No caso de ter vínculo vigente com alguma equipe:\n
+O manager deve rescindir o contrato do jogador em qualquer um dos períodos habilitados.\n
+O jogador poderá abandonar a equipe livremente no final da temporada e no começo da seguinte.\n
+2.3 Requisitos para trocar de equipe\n
+\n
+As trocas de equipes pelos jogadores só podem ocorrer no período habilitado para transferência como se explica no item 2.1\n
+Uma vez que termine o período de transferência não será possível trocar de equipe até o próximo período de transferências.\n
+Jogadores que atuarem 8 jogos pela liga em qualquer clube, não poderá se transferir para nenhuma equipe até que se termine a competição, exceto em caso de transferência para equipe de outra divisão.\n
+Jogador que atuar em 6 jogos pela copa em qualquer equipe, não poderá mais se transferir para nenhuma equipe, no PC a regra não se aplica.\n
+No período em que a janela estiver aberta em dias oficiais de campeonato, a janela fecha as 22:00 e reabre as 12:00 do dia seguinte.\n
+O jogador não poderá atuar em mais de duas equipes em cada competição CBFV.\n
+\n
+3. Competições e regulamento\n
+\n
+3.1 Competições\n
+\n
+3.1.1. PS4\n
+A CBFV no PS4 será composta por 5 competições nacionais:\n
+Regional\n
+Copa do Brasil\n
+Campeonato Brasileiro\n
+Super Copa do Brasil\n
+As competições Internacionais da CBFV, pertencente a CSVP serão:\n
+Copa Libertadores\n
+Copa Sulamericana\n
+Copa América de Seleções\n
+Copa do Mundo De seleções\n
+Mundial de clubes\n
+CSVP CUP\n
+LIGA DOS CAMPEÕES CSVP\n
+3.1.2. PC\n
+As competições no PC serão:\n
+Alpha Cup\n
+Regional\n
+Copa do Brasil\n
+Campeonato Brasileiro\n
+Copa Premium\n
+3.1.3. XBOX\n
+Regional\n
+Copa do Brasil\n
+Liga CBFV\n
+Super Copa\n
+\n
+\n
+3.2 Regras\n
+\n
+3.2.1 Antes da partida\n
+Caso no dia de jogo de campeonato as equipes tenham se enfrentado em partida de temporada de maneira aleatória, uma das equipes deverá criar um clube novo para a realização da partida.\n
+Horários das partidas:\n
+Todos os times têm apenas 10 minutos de tolerância para esperar a realização do jogo. Se ao acaso os clubes passarem do tempo limite devido a bugs de convites, aconselho que não joguem e depois será decidido pela administração em adiar a partida para após o último jogo, ou outra data (casos extremos).\n
+O número mínimo de jogadores em campo é obrigatório e o não cumprimento dessa regra é considerada não comparecimento do adversário e aplicação de wo.\n
+PC\n
+Primeira Divisão: mínimo 8\n
+Segunda divisão: mínimo 8\n
+Divisões inferiores: mínimo 6\n
+Demais competições possuem o mesmo critério da primeira divisão.\n
+PS4\n
+Primeira Divisão: mínimo 11\n
+Segunda divisão: mínimo 10\n
+Divisões inferiores: mínimo 8\n
+Demais competições possuem o mesmo critério das divisões inferiores.\n
+XBOX\n
+Primeira Divisão: mínimo 7\n
+Segunda divisão: mínimo 7\n
+Divisões inferiores: mínimo 6\n
+Demais competições possuem o mesmo critério das divisões inferiores.\n
+\n
+Recomendável que salve as provas para as incidências desse tipo de caso, a acusação deve ter provas e a defesa deve ter os registros de imagens e vídeos sobre a ocorrência. Não serão aceitas denúncias sem provas pelo Comitê disciplinar da CBFV.\n
+Será permitido 1 quit a cada equipe, desde que ocorra antes de 5 minutos da partida. No caso de ter ocorrido gol, o placar será agregado ao resultado posterior da partida. Ex: Meu time quitou aos 4 minutos e estava 1x0, esse placar será agregado ao resultado final da nova partida que será iniciada. Caso não ocorra antes dos 5 minutos, será dado wo contra a equipe infratora.\n
+Será permitido uso de ANY/QQ apenas com 11 jogadores, e nas competições internacionais da CSVP no PS4.\n
+Será proibido uso de ANY/QQ no PC, XBOX e PS4(Competições nacionais).\n
+\n
+3.2.2. Durante a partida\n
+É proibido usar de bugs do jogo como (Obstruir o goleiro nos escanteios ou faltas/ usar esbarradas de forma desleal) (Punição conforme Comitê de disciplina da CBFV)\n
+Bugs de goleiro devem ser gravados e analisados pela administração, goleiro não é intocável, mas esbarrar forçosamente, ROÇAR ou tentar deslocar o goleiro será considerado atitude antidesportiva, passível de grave punição. (Provas via vídeo)\n
+A equipe que utilizar Bugs como o de pressão total ou qualquer outro para travar os movimentos do adversário será punida com o W. O. Deve ser provado via vídeo.\n
+Prezamos pelo FAIR PLAY, qualquer tipo de ANTI JOGO será analisado pela administração, comprovado o anti jogo será aplicado a punição de suspensão ao jogador ou time.\n
+O não cumprimento do mínimo de jogadores será considerado como wo contra a equipe infratora.\n
+\n
+3.2.3. Depois da partida\n
+Em caso de empates em eliminatórias, a decisão se dará através de gol de ouro, até que o primeiro gol seja marcado.\n
+Em casos de cartão vermelho, será aplicado suspensão de 1 partida no jogo seguinte ao jogador expulso, a infração dessa regra acarreta em wo e perda de pontos conforme Comite de Disciplina da CBFV.\n
+É obrigatório ao manager realizar o report até 24 horas após os jogos, após o prazo o report estará indisponível para os managers. A infração dessa regra acarretará nas seguintes punições:\n
+             1 ocorrência= advertência e não contabilização de estatísticas individuais dos jogadores.\n
+             2 ocorrências= suspensão de 1 jogo ao manager e não contabilização de estatísticas individuais dos jogadores.\n
+             3 ocorrências= suspensão de 2 jogos ao manager e não contabilização de estatísticas individuais dos jogadores.\n
+            Demais ocorrências será acrescido de forma progressiva um jogo de suspensão    ao manager.\n
+Ao fim do jogo o time da casa e o visitante são responsáveis por salvar todas as estatísticas das duas equipes: Resultado, Assistência e Gols , além de reportar todos os jogadores que atuaram na partida. Salvar as estatísticas da equipe adversária para averiguar irregularidades do time rival.\n
+Os jogadores devem usar o campo conhecido como igual o registrado no site da CBFV, aqueles que não usarem da forma correta não terão suas estatísticas contabilizadas.\n
+Qualquer dado reportado incorretamente deve ser informado a administração dentro das 24 horas disponíveis para report, um report errado será advertido e em caso de reincidências serão aplicadas sanções pelo Comitê Disciplinar CBFV.\n
+Os clubes poderão entrar com qualquer processo de reclamação até 48 horas após o horário da partida.\n
+\n
+4. Comitê de disciplina Desportiva CBFV\n
+Mudanças de PSN/GAMERTAG/ORIGIN só serão permitidas em períodos sem competição, ou salvo casos autorizados pela administração da CBFV.\n
+Para um clube abandonar as competições CBFV é necessário que todos os managers saiam da equipe.\n
+O resultado deverá ser divulgado em até 24 horas após a solicitação.\n
+O Comitê será composto por membros das comunidades XBOX, PS4 e PC. Julgarão, também, casos não contemplados no regulamento.\n
+\n
+4.1.  Punições\n
+A - Advertência\n
+B - Suspensão de partidas\n
+C - Modificação de resultado\n
+D - Redução de pontos na classificação\n
+E - Perda de pontos\n
+F – Banimento por tempo determinado\n
+G - Exclusão na CBFV\n
+\n
+Não reportar os jogos dentro do prazo e nem comunicar a administração sobre qualquer empecilho será advertido o manager, além das estatísticas não serem contabilizadas.\n
+Em caso de reincidência do não report em 24 horas será aplicada suspensão ao manager e perda de 1 ponto. As estatísticas dos jogadores não serão contabilizadas.\n
+Reportar de forma incorreta as estatísticas do jogo será advertido o manager e em caso de reincidência será aplicado suspensão ao manager.\n
+Presença de jogador suspenso em partida anterior, clube perderá o jogo além de perder 2 pontos.\n
+Falta de respeito de caráter público ou privado a equipes e a organização, será aplicado suspensão automática de 1 partida aos infratores.\n
+Em caso de escalação de jogador irregular punição de 1 jogo ao manager e perda de 1 ponto ao time.\n
+Não comparecimento para jogar dentro do limite de tolerância, partida perdida, wo concedido ao adversário.\n
+Conduta anti-desportiva será passível de suspensão de partidas.\n
+Interferir no goleiro de forma ilegal e voluntaria: se tiver gol, o mesmo será anulado e o jogador infrator receberá infração de 1 jogo.\n
+Quitar da partida mais de uma vez desde que comprovado: partida perdida e suspensão de um jogo ao manager.\n
+Jogador pego com Hack ( Plataforma PC) será suspenso por 1 ano.\n
+O jogador que usar cadastro duplo será suspenso por 6 meses.\n
+O manager que usar jogador com cadastro duplo receberá suspensão de 6 jogos.\n
+Os jogadores não vão poder ter mais de 26 pontos de habilidade durante a partida e até 12h depois da rodada realizada, ou seja, até as 12h do dia seguinte.  \n
+A punição para o Bug dos Skill Points ocorrerá da seguinte forma: \n
+1ª vez: Punição de grau 1\n
+- 2 jogos de punição para o(s) jogador(es) infrator(es), e advertência ao manager.\n
+- Caso sejam dois ou mais jogadores, o clube será punido com a perda de eventuais pontos ganhos nas partidas em que o jogador irregular atuou.\n
+\n
+2ª vez: punição de grau 2\n
+- Jogador infrator será banido da competição, e 2 jogos para o manager.\n
+- O clube será punido com a perda de eventuais pontos ganhos nas partidas em que o jogador irregular atuou.\n
+Caso o time que jogou contra uma equipe com jogador bugado faça a denúncia e ela for comprovada, esse time receberá automaticamente 3 pontos relativos à partida em questão.\n
+Critérios para geração de provas, para que possamos garantir a veracidade e deliberar o mais rápido possível:\n
+a) Vídeo com data e hora, de preferência FILMADA com celular e no site www.horariodebrasilia.org\n
+b) Material único da denúncia. Cada equipe deve ter seu material próprio para cada caso.\n
+c) indicamos que todas as equipes façam TRANSMISSÕES e/ou GRAVAÇÕES da verificação de seus jogadores, seguido pela entrada nas partidas. Isso garante ao time a certificação que não há irregularidade e também produz contra-prova de acusações.\n
+Jogador pego com bug/glitch dos skill points, não poderá se transferir para outra equipe até o fim da competição.\n
+\n
+Ameaças, comentários racistas ou discriminatórios: 10 partidas de suspensão. Em caso de reincidência banimento definitivo.\n
+Se um jogador banido da competição realizar algum jogo pela mesma competição, a equipe inteira será banida da competição e o manager será banido.\n
+Apresentação de provas falsas resultará em rompimento administrativo de jogador ou manager.\n
+Se a equipe apresentar WO em 4 jogos ou nas ultimas 4 rodadas das competições CBFV:\n
+1. Caso ocorra 4 wo antes da metade da competição, toda a equipe é banida, o manager fica impossibilitado de ser manager por qualquer equipe CBFV. E o resto dos jogadores terão que cumprir 6 jogos de suspensão.\n
+2. Se ocorrer 4 wo até depois da metade da competição ou as 4 últimas rodadas do campeonato, equipe será expulsa da competição e jogadores receberão suspensão de 6 jogos validos a partir da próxima competição. O manager será impossibilitado de exercer a função de manager por qualquer equipe da CBFV.\n
+W.O ao ser aplicado equivale a 1x0.\n
+A equipe que tiver aplicado wo sofrerá a punição de -15 pontos no ranking de clubes.\n
+\n
+\n
+\n
+5- Considerações Finais\n
+O prazo de pagamento de premiações será em 30 dias utéis para valores financeiros e  em caso de troféus e medalhas.\n
+É proibida qualquer forma de agressão verbal, pictográfica ou por escrito ao adversário ou participantes do torneio. Caso alguém se sinta ofendido com o ocorrido, deve entrar em contato com a administração para tratar o caso.\n
+\n
+\n
+\n
+PREZEM PELO FAIR PLAY, E PRIORIZEM JOGAR SEMPRE! O MAIOR VENCEDOR É AQUELE QUE VENCE DENTRO DE CAMPO!
+    </string>
 </resources>

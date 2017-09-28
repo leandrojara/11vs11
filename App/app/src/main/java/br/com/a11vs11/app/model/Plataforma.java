@@ -3,7 +3,7 @@ package br.com.a11vs11.app.model;
 import java.io.Serializable;
 
 /**
- * Created by TDR on 25/09/2017.
+ * Created by Leandro Jara on 25/09/2017.
  */
 
 public class Plataforma implements Serializable {

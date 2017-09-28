@@ -20,7 +20,7 @@ import br.com.a11vs11.app.R;
 import br.com.a11vs11.app.model.Manager;
 
 /**
- * Created by TDR on 27/09/2017.
+ * Created by Leandro Jara on 27/09/2017.
  */
 
 public class ManagerCustomAdapter extends ArrayAdapter<Manager> {
