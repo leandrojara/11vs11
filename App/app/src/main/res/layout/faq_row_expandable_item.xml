@@ -8,6 +8,7 @@
     <TextView
         android:id="@+id/txtFaq"
         android:layout_width="match_parent"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_margin="27dp"/>
 </LinearLayout>
