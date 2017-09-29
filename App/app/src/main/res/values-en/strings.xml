@@ -1,37 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--labels-->
-    <string name="app_name" translatable="false">11vs11</string>
-    <string name="cbfvStore" translatable="false">CBFV Store</string>
-    <string name="regulamentos">Regulamentos</string>
-    <string name="faq" translatable="false">FAQ</string>
-    <string name="contatos">Contatos</string>
-    <string name="bemVindo">Bem vindo ao 11vs11</string>
-    <string name="facebook" translatable="false">Facebook</string>
-    <string name="youtube" translatable="false">YouTube</string>
-    <string name="twitter" translatable="false">Twitter</string>
-    <string name="titleContatosXbox">Contatos do XBOX</string>
-    <string name="titleContatosPs4">Contatos do PS4</string>
-    <string name="titleContatosPC">Contatos do PC</string>
-    <string name="titleFaq">Perguntas Frequentes</string>
-
-    <!--links-->
-    <string name="facebookLink" translatable="false">https://www.facebook.com/ConfederacaoBrasileiraDeFutebolVirtual/</string>
-    <string name="twitterLink" translatable="false">https://twitter.com/cbfvproclubs</string>
-    <string name="youtubeLink" translatable="false">https://www.youtube.com/channel/UCplQu9cxTABF_-t-B-LGEFQ</string>
-    <string name="cbfvStoreLink" translatable="false">http://cbfvstore.com.br/</string>
-    <string name="link11vs11" translatable="false">http://11vs11.com.br/</string>
+    <string name="regulamentos">Regulations</string>
+    <string name="contatos">Contacts</string>
+    <string name="bemVindo">Welcome to 11vs11</string>
+    <string name="titleContatosXbox">XBOX Contacts</string>
+    <string name="titleContatosPs4">PS4 Contacts</string>
+    <string name="titleContatosPC">PC Contacts</string>
+    <string name="titleFaq">Common Questions</string>
 
     <!--messages-->
-    <string name="naoPossuiManagers">Não possui managers cadastrados!</string>
-    <string name="naoPossuiFaq">Não existem FAQs informadas!</string>
-    <string name="semPermissaoDiscador">O aplicativo não possui permissão para acessar o discador do seu aparelho.</string>
+    <string name="naoPossuiManagers">No managers are registered!</string>
+    <string name="naoPossuiFaq">No FAQs are registered!</string>
+    <string name="semPermissaoDiscador">The application does not have permission to access your device\'s dialer.</string>
 
     <!--accessibility-->
-    <string name="contentDescription11vs11">Link de acesso ao site do 11 versus 11</string>
-    <string name="contentDescriptionCbfvStore">Link de acesso ao site da CBFV Store</string>
-    <string name="contentDescriptionFacebook">Link de acesso ao Facebook</string>
-    <string name="contentDescriptionTwitter">Link de acesso ao Twitter</string>
-    <string name="contentDescriptionYoutube">Link de acesso ao YouTube</string>
+    <string name="contentDescription11vs11">11 versus 11 website access link</string>
+    <string name="contentDescriptionCbfvStore">CBFV Store website access link</string>
+    <string name="contentDescriptionFacebook">Facebook access link</string>
+    <string name="contentDescriptionTwitter">Twitter access link</string>
+    <string name="contentDescriptionYoutube">YouTube access link</string>
 
     <string name="regulamentoCompleto">
 REGULAMENTO CBFV\n

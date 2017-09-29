@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 i.putExtra("managers", (Serializable) managers);
                 startActivity(i);
             } else {
-                Toast.makeText(this, getString(R.string.naoPossuiManagers), Toast.LENGTH_SHORT);
+                Toast.makeText(this, getString(R.string.naoPossuiManagers), Toast.LENGTH_SHORT).show();
             }
         } else if (v.equals(btnFaq)) {
             List<FAQ> faqs = new DBManager(this).getFaqs();
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 i.putExtra("faqs", (Serializable) faqs);
                 startActivity(i);
             } else {
-                Toast.makeText(this, getString(R.string.naoPossuiFaq), Toast.LENGTH_SHORT);
+                Toast.makeText(this, getString(R.string.naoPossuiFaq), Toast.LENGTH_SHORT).show();
             }
         } else if (v.equals(btnRegulamentos)) {
             Intent i = new Intent(this, RegulamentoActivity.class);

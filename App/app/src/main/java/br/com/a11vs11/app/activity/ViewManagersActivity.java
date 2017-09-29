@@ -1,8 +1,11 @@
 package br.com.a11vs11.app.activity;
 
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -25,8 +28,21 @@ public class ViewManagersActivity extends AppCompatActivity {
         managers = (List<Manager>) getIntent().getSerializableExtra("managers");
         listViewContatos = (ListView) findViewById(R.id.listViewContatos);
 
-        adapter = new ManagerCustomAdapter(managers, getApplicationContext());
+        adapter = new ManagerCustomAdapter(managers, getApplicationContext(), ViewManagersActivity.this);
 
         listViewContatos.setAdapter(adapter);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case ManagerCustomAdapter.MY_PERMISSIONS_REQUEST_CALL_PHONE:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    adapter.abrirDiscador(adapter.telefoneAfterPermission);
+                } else {
+                    Toast.makeText(this, getString(R.string.semPermissaoDiscador), Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
     }
 }
