@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorAccent"
-    tools:context="br.com.a11vs11.app.activity.MainActivity">
+    tools:context="br.com.a11vs11.activity.MainActivity">
 
     <ImageView
         android:id="@+id/btn11vs11"
