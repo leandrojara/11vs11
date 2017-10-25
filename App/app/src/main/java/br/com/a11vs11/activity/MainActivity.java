@@ -21,7 +21,7 @@ import br.com.a11vs11.model.Manager;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener {
 
-    private ImageView btnCbfvStore;
+    private ImageView btn11vs11Pequeno;
     private ImageView btnFacebook;
     private ImageView btnTwitter;
     private ImageView btnYoutube;
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         btn11vs11.setOnClickListener(this);
         btn11vs11.setOnTouchListener(this);
 
-        btnCbfvStore = (ImageView) findViewById(R.id.btnCbfvStore);
-        btnCbfvStore.setOnClickListener(this);
-        btnCbfvStore.setOnTouchListener(this);
+        btn11vs11Pequeno = (ImageView) findViewById(R.id.btn11vs11Pequeno);
+        btn11vs11Pequeno.setOnClickListener(this);
+        btn11vs11Pequeno.setOnTouchListener(this);
 
         btnFacebook = (ImageView) findViewById(R.id.btnFacebook);
         btnFacebook.setOnClickListener(this);
@@ -113,11 +113,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     @Override
     public void onClick(View v) {
-        if (v.equals(btn11vs11)) {
+        if (v.equals(btn11vs11) || v.equals(btn11vs11Pequeno)) {
             Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.link11vs11)));
-            startActivity(i);
-        } else if (v.equals(btnCbfvStore)) {
-            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.cbfvStoreLink)));
             startActivity(i);
         } else if (v.equals(btnFacebook)) {
             Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.facebookLink)));

@@ -2,9 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "br.com.a11vs11.app"
+        applicationId 'br.com.a11vs11.cbfv.app'
         minSdkVersion 17
         targetSdkVersion 24
         versionCode 1

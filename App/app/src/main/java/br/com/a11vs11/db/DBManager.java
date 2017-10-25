@@ -33,7 +33,7 @@ public class DBManager {
 
         }
 
-        SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, SQLiteDatabase.CREATE_IF_NECESSARY, null);
+        SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, Context.MODE_ENABLE_WRITE_AHEAD_LOGGING, null);
 
         for (int i = 1; i <= DB_VERSION; i++) {
             switch (i) {
@@ -218,7 +218,7 @@ public class DBManager {
     }
 
     public List<Manager> getManagers(int plataforma) {
-        SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, SQLiteDatabase.CREATE_IF_NECESSARY, null);
+        SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, Context.MODE_ENABLE_WRITE_AHEAD_LOGGING, null);
         db.setVersion(DB_VERSION);
         db.setLocale(Locale.getDefault());
 
@@ -245,8 +245,8 @@ public class DBManager {
         return managers;
     }
 
-    public List<FAQ> getFaqs(){
-        SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, SQLiteDatabase.CREATE_IF_NECESSARY, null);
+    public List<FAQ> getFaqs() {
+        SQLiteDatabase db = context.openOrCreateDatabase(DB_NAME, Context.MODE_ENABLE_WRITE_AHEAD_LOGGING, null);
         db.setVersion(DB_VERSION);
         db.setLocale(Locale.getDefault());
 

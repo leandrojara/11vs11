@@ -1,9 +1,9 @@
 <resources>
     <!--labels-->
     <string name="app_name" translatable="false">11vs11</string>
-    <string name="cbfvStore" translatable="false">CBFV Store</string>
     <string name="regulamentos">Regulamentos</string>
     <string name="faq" translatable="false">FAQ</string>
+    <string name="string11vs11" translatable="false">Site</string>
     <string name="contatos">Contatos</string>
     <string name="bemVindo">Bem vindo ao 11vs11</string>
     <string name="facebook" translatable="false">Facebook</string>
@@ -18,7 +18,6 @@
     <string name="facebookLink" translatable="false">https://www.facebook.com/ConfederacaoBrasileiraDeFutebolVirtual/</string>
     <string name="twitterLink" translatable="false">https://twitter.com/cbfvproclubs</string>
     <string name="youtubeLink" translatable="false">https://www.youtube.com/channel/UCplQu9cxTABF_-t-B-LGEFQ</string>
-    <string name="cbfvStoreLink" translatable="false">http://cbfvstore.com.br/</string>
     <string name="link11vs11" translatable="false">http://11vs11.com.br/</string>
 
     <!--messages-->
@@ -28,7 +27,6 @@
 
     <!--accessibility-->
     <string name="contentDescription11vs11">Link de acesso ao site do 11 versus 11</string>
-    <string name="contentDescriptionCbfvStore">Link de acesso ao site da CBFV Store</string>
     <string name="contentDescriptionFacebook">Link de acesso ao Facebook</string>
     <string name="contentDescriptionTwitter">Link de acesso ao Twitter</string>
     <string name="contentDescriptionYoutube">Link de acesso ao YouTube</string>

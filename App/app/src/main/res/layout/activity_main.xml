@@ -3,22 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorAccent"
+    android:orientation="vertical"
     tools:context="br.com.a11vs11.activity.MainActivity">
 
     <ImageView
         android:id="@+id/btn11vs11"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/contentDescription11vs11"
+        android:layout_weight="0.59"
         android:background="@drawable/backgroud_11vs11"
-        android:layout_weight="0.59"></ImageView>
+        android:contentDescription="@string/contentDescription11vs11"></ImageView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.5"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -28,19 +29,20 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/btnCbfvStore"
+                android:id="@+id/btn11vs11Pequeno"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.9"
-                android:contentDescription="@string/contentDescriptionCbfvStore"
                 android:clickable="true"
-                android:src="@mipmap/ic_cbfv_store" />
+                android:contentDescription="@string/contentDescription11vs11"
+                android:focusable="true"
+                android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.1"
-                android:text="@string/cbfvStore"
+                android:text="@string/string11vs11"
                 android:textAlignment="center" />
         </LinearLayout>
 
@@ -55,8 +57,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.9"
-                android:contentDescription="@string/regulamentos"
                 android:clickable="true"
+                android:contentDescription="@string/regulamentos"
+                android:focusable="true"
                 android:src="@mipmap/ic_regulamento" />
 
             <TextView
@@ -80,6 +83,7 @@
                 android:layout_weight="0.9"
                 android:clickable="true"
                 android:contentDescription="@string/titleFaq"
+                android:focusable="true"
                 android:src="@mipmap/ic_faq" />
 
             <TextView
@@ -95,6 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.5"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -110,6 +115,7 @@
                 android:layout_weight="0.9"
                 android:clickable="true"
                 android:contentDescription="@string/titleContatosXbox"
+                android:focusable="true"
                 android:src="@mipmap/ic_xbox" />
 
             <TextView
@@ -133,6 +139,7 @@
                 android:layout_weight="0.9"
                 android:clickable="true"
                 android:contentDescription="@string/titleContatosPs4"
+                android:focusable="true"
                 android:src="@mipmap/ic_ps4" />
 
             <TextView
@@ -155,6 +162,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.9"
                 android:clickable="true"
+                android:contentDescription="@string/titleContatosPC"
+                android:focusable="true"
                 android:src="@mipmap/ic_origin" />
 
             <TextView
@@ -170,6 +179,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.5"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -185,6 +195,7 @@
                 android:layout_weight="0.9"
                 android:clickable="true"
                 android:contentDescription="@string/contentDescriptionFacebook"
+                android:focusable="true"
                 android:src="@mipmap/ic_facebook" />
 
             <TextView
@@ -208,6 +219,7 @@
                 android:layout_weight="0.9"
                 android:clickable="true"
                 android:contentDescription="@string/contentDescriptionTwitter"
+                android:focusable="true"
                 android:src="@mipmap/ic_twitter" />
 
             <TextView
@@ -231,6 +243,7 @@
                 android:layout_weight="0.9"
                 android:clickable="true"
                 android:contentDescription="@string/contentDescriptionYoutube"
+                android:focusable="true"
                 android:src="@mipmap/ic_youtube" />
 
             <TextView
